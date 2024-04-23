@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 上半部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- 显示图像信息的ImageView -->
+        <ImageView
+            android:id="@+id/showImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
+        <!-- 显示警示信息的TextView -->
+        <TextView
+            android:id="@+id/warningText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/warning" />
+    </LinearLayout>
+
+
+    <!-- 下半部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/gray">
+        <!-- 位移记录指示文本框 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/info_records"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <!-- 位移记录RecycleView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cardRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

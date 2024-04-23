@@ -1,0 +1,130 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- 卡片的主体 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- 图像视图，等着程序获取 -->
+        <ImageView
+            android:id="@+id/displacement_location_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/image_description">
+        </ImageView>
+
+        <!-- 信息视图采用线性布局 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <!-- 第一行放置位移地点信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 位移指示文本框 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_location"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+                <!-- 位移情况显示文本框 -->
+                <TextView
+                    android:id="@+id/info_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+
+            <!-- 第二行放置位移时间信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!-- 时间指示文本框 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_time"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+                <!-- 时间情况显示文本框 -->
+                <TextView
+                    android:id="@+id/info_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- 第三行放置位移距离信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!-- 距离指示文本框 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_distance"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+                <!-- 距离情况显示文本框 -->
+                <TextView
+                    android:id="@+id/info_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- 第四行放置位移等级信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!-- 等级指示文本框 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_level"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+                <!-- 等级情况显示文本框 -->
+                <TextView
+                    android:id="@+id/info_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

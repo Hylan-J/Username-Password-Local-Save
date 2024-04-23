@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">大坝位移监测预警系统App</string>
+    <string name="warning">Warning…</string>
+
+    <!-- 卡片试图中的字符信息 -->
+    <string name="info_location">位移地点:</string>
+    <string name="info_time">位移时间:</string>
+    <string name="info_distance">位移距离:</string>
+    <string name="info_level">位移等级:</string>
+    <string name="image_description">位移图像(程序获取)</string>
+    <string name="info_records">位移记录</string>
+    <!-- 卡片试图中的字符信息 -->
+
+</resources>
